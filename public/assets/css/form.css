@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+
+      background-color: #f5f5f5;
+      margin: 0 auto;
+
+    }
+
+    .stepper-container {
+      display: flex;
+      max-width: 84%;
+
+      margin: 80px auto;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: #4caf50;
+      padding: 20px;
+      box-sizing: border-box;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 3;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: white;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .step {
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .step:hover {
+      background-color: #45a049;
+    }
+
+    .step.active {
+      background-color: #218c74;
+    }
+.page {
+  width: 25%;
+}
+
+.page .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.page .field {
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+
+.page .field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+.page .field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.page .field select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.page .field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #10ac84;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+.page .field button:hover {
+  background: #000;
+}
+
+.page .btns button {
+  margin-top: -20px !important;
+}
+
+.page .btns button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+}
+
+.page .btns button.next {
+  margin-left: 3px;
+}
+    h2 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
